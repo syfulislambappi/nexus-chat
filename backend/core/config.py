@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     ALGORITHM: str = "HS256"
     
     # AI Services
-    OPENAI_ROUTER_KEY: str
+    OPENROUTER_API_KEY: str
     PINECONE_API_KEY: str
     PINECONE_ENV: str
     PINECONE_INDEX_NAME: str
