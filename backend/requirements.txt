@@ -1,0 +1,16 @@
+boto3
+fastapi
+flashrank
+langchain
+langchain-community
+langchain-openrouter
+langchain-pinecone
+pinecone-client
+psycopg2-binary
+pydantic
+pydantic-settings
+python-jose[cryptography]
+python-multipart
+sqlalchemy
+unstructured[all-docs]
+uvicorn[standard]
