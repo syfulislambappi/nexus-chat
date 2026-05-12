@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from core.config import settings
 from core.database import engine, Base
+from api import auth_routes
 
 # Critical: Import models so SQLAlchemy "sees" them before creating tables
 from models import orm_models 
@@ -38,4 +39,4 @@ async def health_check():
         "version": "1.0.0"
     }
 
-# We will add app.include_router() calls here as we build the routes in the next steps.
+app.include_router(auth_routes.router)
